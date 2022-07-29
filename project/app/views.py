@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html',)
+
+def testroom(request):
+    return render(request, 'testroom.html')
