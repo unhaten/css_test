@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
-    {% load tailwind_tags %}
+    {% load static %} {% load tailwind_tags %}
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel='stylesheet' href='{% static 'css/index_master.css' %}' type='text/css'>
-        {% tailwind_css %}
+        <link rel='stylesheet' href='{% static 'css/index_master.css' %}'
+        type='text/css'> {% comment %} {% tailwind_css %} {% endcomment %}
         <title>Document</title>
     </head>
     <body>
         <h1>SAY IT</h1>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
-        <h2 class='text-2xl bg-slate-500 hover:bg-amber-500'>NIGGER</h2>
-        
+        <h1 class="text-3xl font-bold underline hover:bg-pink-500">
+            Hello world!
+        </h1>
+        <h2 class="text-2xl bg-slate-500 hover:bg-amber-500">NIGGER</h2>
+        <h1 class="greet">hello</h1>
+        <ul>
+            <li>carrot</li>
+            <li>milk</li>
+            <li>potatoes</li>
+        </ul>
+        <p>
+            <a
+                class="link"
+                href="https://battlelog.battlefield.com/bf4/soldier/Unhaten/stats/1070304524/pc/"
+                >go to my stats</a
+            >
+        </p>
+        <h2>Services</h2>
+        <a href="">tittie</a>
 
+        <form action="">
+            <input type="text" name="" placeholder="Name" id="" />
+            <input type="email" name="" placeholder="Email" id="" />
+            <textarea name="" id="" cols="30" rows="1w"></textarea>
+            <button type="submit">Submit</button>
+        </form>
 
-        
+        <div class="div-class"></div>
+
+        <img
+            id="img-test"
+            src="{% static 'images/img1.jpg' %}"
+            alt="wrong path"
+        />
     </body>
 </html>

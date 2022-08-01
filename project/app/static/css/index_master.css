@@ -1,3 +1,57 @@
-h1 {
+body {
+    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.3),rgba(255, 255, 0, 0.1));
+}
+
+h1:hover[class="greet"] {
+    color: rgba(255, 140, 0);
+}
+
+h1[class="greet"] {
     color: blue;
+}
+
+li:last-child {
+    color: steelblue;
+}
+
+/* .link:link {
+    color: red;
+}
+
+.link:visited {
+    color: cyan;
+} */
+
+h2 + a {
+    color: green;
+}
+
+textarea ~ button {
+    color: fuchsia;
+}
+
+ul > li {
+    color: lawngreen;
+}
+
+/* img[src^='../img/'] { */
+
+img {
+    border: 10px solid yellow;
+}
+
+#img-test {
+    border: 10px solid red;
+    width: 30%;
+    height: 400px;
+}
+
+.div-class {
+    height: 300px;
+    width: 50%;
+    background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+    /* background: url("../images/img2.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background: linear-gradient(-215deg, red,  rgba(255, 255, 0, 0)); */
 }
