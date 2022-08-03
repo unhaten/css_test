@@ -1,5 +1,19 @@
 body {
-    background: linear-gradient(to bottom, rgba(255, 255, 0, 0.3),rgba(255, 255, 0, 0.1));
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 0, 0.3),
+        rgba(255, 255, 0, 0.1)
+    );
+    font-size: 1.15em;
+    text-transform: uppercase;
+    text-align: justify;
+    font-family: 'Mouse Memoirs', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
+}
+
+.say {
+    font-family: 'Anton', sans-serif;
+    /* font-weight: 400; */
 }
 
 h1:hover[class="greet"] {
@@ -14,11 +28,17 @@ li:last-child {
     color: steelblue;
 }
 
-/* .link:link {
+.link {
     color: red;
+    text-decoration: line-through;
 }
 
-.link:visited {
+/* .link:link {
+    color: green;
+    text-decoration: none;
+} */
+
+/* .link:visited {
     color: cyan;
 } */
 
@@ -48,10 +68,14 @@ img {
 
 .div-class {
     height: 300px;
-    width: 50%;
+    width: 30%;
     background: radial-gradient(circle, red 20%, blue 40%, green 55%);
     /* background: url("../images/img2.jpg"); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background: linear-gradient(-215deg, red,  rgba(255, 255, 0, 0)); */
+}
+
+.italics {
+    font-style: oblique;
 }
