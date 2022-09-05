@@ -75,14 +75,15 @@ li:last-child {
 
 .link {
     color: red;
-    text-decoration: line-through;
-    /* float: right; */
+    text-decoration: none;
+    /*float: right;*/
 }
 
-/* .link:link {
-    color: green;
-    text-decoration: none;
-} */
+.link:link {
+    color: blue;
+    text-decoration: line-through;
+    /* font-size: 50px; */
+}
 
 /* .link:visited {
     color: cyan;
@@ -92,9 +93,9 @@ h2 + a {
     color: green;
 }
 
-textarea ~ button {
+/* textarea ~ button {
     color: fuchsia;
-}
+} */
 
 ul > li {
     color: lawngreen;
@@ -139,4 +140,68 @@ img {
 
 .ul-stuff {
     display: none;
+}
+
+#buttonie {
+    padding: 10px 15px;
+    margin: 5px;
+    font-family: "Mouse Memoirs";
+    font-size: 20px;
+    color: rgb(184, 90, 90);
+    background: rgb(102, 94, 94);
+    border: 3px solid;
+    text-decoration: none;
+    transform: matrix(1, -0.05, 0, 1.5, 10, -10);
+    transition: background 500ms ease, padding 300ms ease;
+    -webkit-transition: background 500ms ease, padding 300ms ease;
+    -moz-transition: background 500ms ease, padding 300ms ease;
+    -ms-transition: background 500ms ease, padding 300ms ease;
+    -o-transition: background 500ms ease, padding 300ms ease;
+    -webkit-transform: matrix(1, 0.02, 0, 1.1, 10, 10);
+    -moz-transform: matrix(1, -0.05, 0, 1.5, 10, -10);
+    -ms-transform: matrix(1, -0.05, 0, 1.5, 10, -10);
+    -o-transform: matrix(1, -0.05, 0, 1.5, 10, -10);
+}
+
+#buttonie:hover {
+    background: rgb(197, 187, 187);
+    padding: 20px 30px;
+}
+
+#loremStuff {
+    /*animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    */animation: red-to-black 4s linear 0s 2 alternate;
+    -webkit-animation: red-to-black 4s linear 0s 2 alternate;
+}
+
+@keyframes red-to-black {
+    0% {
+        background: red;
+        transform: transalte(0px, 0px);
+        -webkit-transform: transalte(0px, 0px);
+        -moz-transform: transalte(0px, 0px);
+        -ms-transform: transalte(0px, 0px);
+        -o-transform: transalte(0px, 0px);
+    }
+    50% {
+        background: yellow;
+        transform: translate(10px, 10px);
+        -webkit-transform: translate(10px, 10px);
+        -moz-transform: translate(10px, 10px);
+        -ms-transform: translate(10px, 10px);
+        -o-transform: translate(10px, 10px);
+    }
+    100% {
+        background: black;
+        transform: translate(15px, 15px);
+        -webkit-transform: translate(15px, 15px);
+        -moz-transform: translate(15px, 15px);
+        -ms-transform: translate(15px, 15px);
+        -o-transform: translate(15px, 15px);
+    }
 }
