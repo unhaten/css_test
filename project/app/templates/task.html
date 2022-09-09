@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href='{% static 'css/task_master.css' %}'
+        type='text/css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Mouse+Memoirs&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>TASKFORCE</title>
+    </head>
+    <body>
+        {% comment %} //! MAIN PAGE {% endcomment %}
+        <div class="main">
+            <h1>Some kind of trash title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus dolor quisquam incidunt illum quae aliquid
+                facilis dolorem reprehenderit. Modi placeat fugit eius quod
+                dignissimos, maiores iure natus nam blanditiis ipsam?
+            </p>
+            <h2>Subtitle 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                repudiandae maxime velit consectetur quisquam odit quia
+                accusamus commodi dolorum soluta totam temporibus, id aspernatur
+                aut reprehenderit nisi non recusandae! Officia.
+            </p>
+            <img
+                src="{% static 'images/test1.jpg' %}"
+                id="flowersInDark"
+                alt=""
+            />
+            <h2>Subtitle 2</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                quia alias praesentium mollitia fugiat molestias asperiores
+                dolor soluta deleniti distinctio exercitationem eaque, repellat
+                voluptas voluptatibus. Aut ea distinctio mollitia harum.
+            </p>
+
+            <h2>Topic 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis distinctio quod cumque nobis aliquid, maxime
+                officiis repudiandae odit minus tempore harum nostrum assumenda
+                itaque, necessitatibus reprehenderit aperiam tenetur iure ad?
+            </p>
+
+            <table>
+                <tr>
+                    <ol>
+                        <li>lorem</li>
+                        <li>ipsum</li>
+                        <li>Linus</li>
+                        <li>sammy</li>
+                    </ol>
+                </tr>
+            </table>
+            {% comment %} //! GRID IN MAIN {% endcomment %}
+            <div class="grid">
+                <img src="{% static 'images/test2.jpg'%}" alt="" />
+                <img src="{% static 'images/test3.jpg' %}" alt="" />
+                <img src="{% static 'images/test4.png'%}" alt="" />
+                <img src="{% static 'images/test5.png'%}" alt="" />
+                <img src="{% static 'images/test6.png'%}" alt="" />
+                <img src="{% static 'images/test7.jpg'%}" alt="" />
+                <img src="{% static 'images/test8.png'%}" alt="" />
+                <img src="{% static 'images/test9.png'%}" alt="" />
+            </div>
+        </div>
+
+        {% comment %} //! SIDEBAR {% endcomment %}
+        <div class="sidebar">
+            <div class="sidebarContent">
+                <h2>Post 1</h2>
+                <p>SOME TEXT!</p>
+                <a href="https://soundcloud.com/lil_peep/tracks"
+                    >Lil Peep Soundcloud</a
+                >
+            </div>
+            <div class="sidebarContent">
+                <h2>Post 2</h2>
+                <p>SOME TEXT!</p>
+                <a href="https://soundcloud.com/lil_peep/tracks"
+                    >Lil Peep Soundcloud</a
+                >
+            </div>
+            <div class="sidebarContent">
+                <h2>Post 3</h2>
+                <p>SOME TEXT!</p>
+                <a href="https://soundcloud.com/lil_peep/tracks"
+                    >Lil Peep Soundcloud</a
+                >
+            </div>
+            <div class="sidebarContent">
+                <h2>Post 4</h2>
+                <p>SOME TEXT!</p>
+                <a href="https://soundcloud.com/lil_peep/tracks"
+                    >Lil Peep Soundcloud</a
+                >
+            </div>
+        </div>
+    </body>
+</html>

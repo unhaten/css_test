@@ -8,3 +8,6 @@ def index(request):
 
 def testroom(request):
     return render(request, 'testroom.html')
+
+def task(request):
+    return render(request, 'task.html')
